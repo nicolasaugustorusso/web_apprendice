@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+body{
+    min-height: 1000px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imagens/charutobackgroud.jpg);
+    background-size: cover;
+}
+
+.banner .conteudo{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .conteudo h2{
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .conteudo p{
+    font-size: 1em;
+    color: #fff;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.stiky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05)
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.stiky .logo{
+    color: #111;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+header .navegacao{
+    position: relative;
+    display: flex;
+}
+
+header .navegacao li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navegacao li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.stiky .navegacao li a{
+    color: #111;
+}
+
+header .navegacao li a:hover{
+    color: #ff0157;
+}
+
+section{
+    padding: 100px;
+}
+
+.linha{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linha .col50{
+    position: relative;
+    width: 48%;
+}
+
+.textotitulo{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.textotitulo span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.linha .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.linha .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .conteudo .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.menu .conteudo .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.menu .conteudo .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .conteudo .box .texto{
+    padding: 15px 0 5px;
+}
+
+.menu .conteudo .box .texto h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.expert .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.expert .conteudo .box{
+    width: 250px;
+    margin: 30px;
+}
+
+.expert .conteudo .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expert .conteudo .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .conteudo .box .text{
+    padding: 15px 0 5px;
+}
+
+.expert .conteudo .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.clientes{
+    background: url(imagens/charutobackground2.jpg);
+    background-size: cover;
+}
+
+.branco .textotitulo,
+.branco p{
+    color: #fff;
+}
+
+.clientes .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.clientes .conteudo .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clientes .conteudo .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.clientes .conteudo .box .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clientes .conteudo .box .texto{
+    text-align: center;
+}
+
+.clientes .conteudo .box .texto p{
+    color: #666;
+    font-style: italic;
+}
+
+.clientes .conteudo .box .texto h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+
+.contato{
+    background: url(imagens/charutobackground3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formadecontato{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+.formadecontato h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.formadecontato .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formadecontato .inputBox input,
+.formadecontato .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.formadecontato .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.Textocopyright{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.Textocopyright p{
+    color: #333;
+}
+
+.Textocopyright a{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navegacao{
+        display: none;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url();
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}
